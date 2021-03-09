@@ -36,12 +36,11 @@ function ifElseFunction() {
 function oddFunction() {
     for (i = 0; i <= 7; i++) {
         if(i % 2 == 1)
-        alert(i)
-        // console.log(i) // prints all numbers between 0-7
+        alert(i) // Works as predicted
+        // console.log(i) // prints all numbers between 0-7 in th console not just odd however when alert is commented out it does only print odd numbers
     }
     // console.log(i)  // Prints 8 in console
 }
-// console.log(i)
 
 function evenFunction() {
     for (i = 0; i <= 12; i++) {
@@ -55,6 +54,8 @@ var sum = 0
 function sumFunction() {
     for (i = 1; i <= 5; i++) {
         sum += i
+        // alert("num: ", i, "sum: ", sum) //  only shows num: in box, when ok is clicked the console does as it is supposed to
+        // alert(i, sum) // only shows the num value in box when ok is clicked console does as it is supposed to
         alert(sum)
         console.log('num: ', i, "sum: ", sum)
     }

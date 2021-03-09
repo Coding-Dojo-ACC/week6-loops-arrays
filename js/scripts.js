@@ -33,13 +33,25 @@ function ifElseFunction() {
     // console.log(ifElseFunction())
 }
 
+// function oddFunction() {
+//     for (i = 0; i <= 7; i++) {
+//         if(i % 2 == 1) 
+//         alert(i) // Works as predicted
+//         // console.log(i) // prints all numbers between 0-7 in th console not just odd however when alert is commented out it does only print odd numbers
+//     }
+//     // console.log(i)  // Prints 8 in console
+// }
+
+
+// Corrected version below 
+
 function oddFunction() {
     for (i = 0; i <= 7; i++) {
-        if(i % 2 == 1)
-        alert(i) // Works as predicted
-        // console.log(i) // prints all numbers between 0-7 in th console not just odd however when alert is commented out it does only print odd numbers
+        if(i % 2 == 1) {
+            alert(i)
+            console.log(i)
+        }
     }
-    // console.log(i)  // Prints 8 in console
 }
 
 function evenFunction() {

@@ -68,7 +68,61 @@ function sumFunction() {
         sum += i
         // alert("num: ", i, "sum: ", sum) //  only shows num: in box, when ok is clicked the console does as it is supposed to
         // alert(i, sum) // only shows the num value in box when ok is clicked console does as it is supposed to
-        alert(sum)
+        // alert(sum)
+        alert("Current Number: " + i + " " + "Current Sum: " + sum)
         console.log('num: ', i, "sum: ", sum)
     }
+}
+
+function arrayFunction() {
+    var array = []
+    for (var i = 1; i <= 20; i++) {
+        array.push(i)
+    }
+    alert(array)
+    console.log(array)
+}
+
+function avgFunction() {
+    var arr = [100,95,80,75,100]
+    var sum = 0
+    var avg = 0
+    for (i = 0; i < arr.length; i++) {
+        sum = sum + arr[i]
+    }
+    avg = sum / arr.length
+    alert("The average is: " + avg)
+    console.log(avg)
+}
+
+
+function dinoArray() {
+    var dinos = [
+        { id: 1, name: "tyrannosaurus", diet: "carnivorous", weight: "7000kg", height: "12m", period: "Late Cretaceous" },
+        { name: "stegosaurus", diet: "herbivorous", weight: "2000kg", height: "9m", period: "Late Jurassic", },
+        { name: "velociraptor", diet: "carnivorous", weight: "15kg", height: "1.8m", period: "Late Cretaceous", }
+    ]
+    var arr = []
+    for (i = 0; i < dinos.length; i++) {
+        arr.push(dinos[i].name)
+    }
+    alert(arr)
+    console.log(arr)
+}
+function dino2Array() {
+    var dinos = [
+        { id: 1, name: "tyrannosaurus", diet: "carnivorous", weight: "7000kg", height: "12m", period: "Late Cretaceous" },
+        { name: "stegosaurus", diet: "herbivorous", weight: "2000kg", height: "9m", period: "Late Jurassic", },
+        { name: "velociraptor", diet: "carnivorous", weight: "15kg", height: "1.8m", period: "Late Cretaceous", }
+    ]
+    var miniArr = []
+    var arr = []
+    for (i = 0; i < dinos.length; i++) {
+        miniArr.push(dinos[i].name) + miniArr.push(dinos[i].period);
+        for (i = 0; i < miniArr.length; i++) {
+            arr.push(miniArr[i])
+            alert(arr)
+            console.log(arr)
+        }
+    } 
 }

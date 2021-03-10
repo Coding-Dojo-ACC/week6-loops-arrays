@@ -6,11 +6,29 @@ body {
     justify-content: center;
     align-items: center;
 
-    .functions {
+    .main {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         justify-content: center;
         align-items: center;
-        margin: 2em;
+        flex-wrap: wrap;
+
+        .functions {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: 2em;
+            width: 200px;
+
+            h5 {
+                text-align: center;
+            }
+            span {
+                margin: .5em;
+                text-align: center;
+            }
+
+        }
     }
 }

@@ -6,10 +6,25 @@ body {
   justify-content: center;
   align-items: center;
 }
-body .functions {
+body .main {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+body .main .functions {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   margin: 2em;
+  width: 200px;
+}
+body .main .functions h5 {
+  text-align: center;
+}
+body .main .functions span {
+  margin: 0.5em;
+  text-align: center;
 }
